@@ -30,7 +30,7 @@ img{
   height: 80%;
   width: 80%;
   display: inline-block;
-  animation:doll 2s forwards;
+  animation:doll 0.5s forwards;
   }
 
 .img {

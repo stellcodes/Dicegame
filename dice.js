@@ -23,12 +23,15 @@ function displayResult(playerOne,playerTwo){
     return "Player Two won!! 🚩 You LOST"
   }
   else{
-    return "Let's play"
+    return "Spinning..."
   }
 }
 
-var result = displayResult();
-document.querySelector(".outcome").innerHTML = result;
+var result =  displayResult();
+function delay(){
+  document.querySelector(".outcome").innerHTML = result;
+}
+setTimeout(delay, 500);
 
 var button = document.querySelector(".btn");
 button.addEventListener("click", refresh);
